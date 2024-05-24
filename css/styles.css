@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif; /* Đặt font chữ cho trang web */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Đảm bảo padding và border không ảnh hưởng đến kích thước tổng thể của các phần tử */
+}
+
+header {
+    background-color: #333; /* Màu nền của header */
+    color: white; /* Màu chữ của header */
+    padding: 1em 0; /* Khoảng cách bên trong của header */
+    text-align: center; /* Căn giữa nội dung bên trong header */
+}
+
+.products {
+    display: flex; /* Sử dụng flexbox để sắp xếp sản phẩm */
+    justify-content: space-around; /* Khoảng cách giữa các sản phẩm */
+    flex-wrap: wrap; /* Cho phép các sản phẩm xuống dòng nếu không đủ không gian */
+    padding: 1em; /* Khoảng cách bên trong của section chứa sản phẩm */
+}
+
+.product {
+    border: 1px solid #ddd; /* Viền của mỗi sản phẩm */
+    border-radius: 5px; /* Bo góc cho viền sản phẩm */
+    padding: 1em; /* Khoảng cách bên trong của mỗi sản phẩm */
+    text-align: center; /* Căn giữa nội dung bên trong sản phẩm */
+    width: 30%; /* Chiều rộng của mỗi sản phẩm */
+    margin-bottom: 1em; /* Khoảng cách bên dưới mỗi sản phẩm */
+}
+
+.product img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của thẻ cha */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+}
+
+.product h2 {
+    font-size: 1.5em; /* Kích thước chữ của tên sản phẩm */
+    margin: 0.5em 0; /* Khoảng cách trên và dưới của tên sản phẩm */
+}
+
+footer {
+    background-color: #333; /* Màu nền của footer */
+    color: white; /* Màu chữ của footer */
+    text-align: center; /* Căn giữa nội dung bên trong footer */
+    padding: 1em 0; /* Khoảng cách bên trong của footer */
+    position: fixed; /* Cố định footer ở dưới cùng của trang */
+    width: 100%; /* Chiều rộng của footer */
+    bottom: 0; /* Đặt footer ở dưới cùng */
+}
